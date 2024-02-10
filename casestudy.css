@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+.casestudy{
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.casestudy .left{
+    width: 40%;
+    padding: 30px 80px;
+    transition: 2s;
+    transform: translateX(-100%);
+}
+
+
+section.show-animation .casestudy .left{
+    transform: translateX(0);
+}
+
+.casestudy .left h2{
+    font-size: 30px;
+    color: rgb(23,40,82);;
+    line-height: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.casestudy .right{
+
+    width: 60%;
+    padding: 30px 80px;
+   
+  
+
+}
+.casestudy .left p,h2,a{
+    margin-bottom: 30px;
+    
+}
+.casestudy .left a{
+    text-decoration: none;
+    color: darkorange;
+    font-weight: bold;
+}
+.casestudy .right .card2{
+    height: auto;
+    width: 50%;
+    box-shadow: 5px 5px 10px rgb(94, 92, 92);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+    transform: translateX(100%);
+}
+
+
+section.show-animation   .casestudy .right .card2{
+    transform: translateX(0);
+}
+.casestudy .right .card2 img{
+    height: 60%;
+    width: 100%;
+
+}
+.card2 h4,p,img{
+    margin: 5px 0px;
+    text-align: left;
+    
+}
+.card2:nth-child(2){
+    margin-left: 30px;
+}
+.card2 h4{
+    font-size: larger;
+    color:rgb(23,40,82);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ @media screen and (max-width: 760px){
+
+.casestudy{
+
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px;
+    padding: 0px 20px;
+
+}
+
+.casestudy .left h2{
+    font-size: 25px;
+      text-align: left;
+ 
+}
+
+.casestudy .left,.right{
+    width: 100%;
+    margin: 5px;
+    padding: 0px 0px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.casestudy .right{
+
+width: 100%;
+flex-wrap: wrap;
+padding: 20px 0px
+
+}
+
+.casestudy .right .card2{
+    width: 100%;
+    transform: translateX(0);
+    transition: 1s;
+    margin: 15px 0px;
+    
+
+}
+
+.casestudy .right .card2 img{
+    width: 100%;
+    height: auto;
+}
+.card2:nth-child(2){
+    margin-left: 0px;
+}
+
+.card2 h4,p,img{
+    margin: 5px 0px;
+    
+}
+ }
+
+ 
+@keyframes CaseStudyLeft {
+    0%{
+      transform: translate(200px,0px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
+  }
+  
+  
+  @keyframes CaseStudyRight {
+    0%{
+      transform: translate(0px,200px);
+    }
+    100%{
+      transform: translate(0px,0px);
+    }
+    
+  }
+  
+  

@@ -1,0 +1,449 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  } */
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+  section {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+     background-color:white;
+
+    /* padding: 20px 5px; */  
+  } 
+  .service img{
+    mix-blend-mode: white;
+  }
+  .service{
+    text-align: center;
+    /* padding: 50px 0px; */
+    background-color: #ffffff;
+    height: auto;
+  }
+  .service h2{
+    position: relative;
+    display: inline;
+    font-size: 25px;
+    color: rgb(23,40,82);
+    font-family: sans-serif;
+
+  }
+
+
+  .service h2::before{
+  content: '';
+	position: absolute;
+	bottom: -10px;
+	background-color:orange;
+	height: 4px;
+	box-sizing: border-box;
+	width: 126px;
+  }
+  .service h4{
+    font-size: 40px;
+    color: rgb(23,40,82);
+    margin: 30px 0;
+    transition: 1s;
+
+      transform: translateX(-100%);
+      opacity: 0;
+    
+  }
+
+  /* 9/2/24 Changes in Service heading */
+  .contain{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 15px;
+    /* margin-bottom: 25px; */
+    /* margin-top: 25px; */
+    box-shadow: 0px 5px 5px solid rgb(0, 0, 0.8);
+    background-color: rgb(23,40,82);
+    align-items: center;
+    position: relative;
+  }
+  .contain h2{
+    position: absolute;
+    left: 7%;
+    top:5%;
+    color: white;
+    width: max-content;
+   }
+  .contain h1{
+    width: 35%;
+    font-weight: normal;
+    text-align: left;
+    color: white;
+    margin-left: 60px;
+    animation: trans 1.5s;
+  }
+  @keyframes trans{
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.2;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+      transition: ease-in all 0.2s;
+    }
+  }
+  .contain p{
+    margin-top: 30px;
+    max-width: fit-content;
+  }
+  .contain h1 a{
+    color: orange;
+    border: 3px solid white;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .contain button{
+    margin-top: 20px;
+  }
+  .contain img{
+    width: 55%;
+    height: 90%; 
+    animation: appear 2s;
+    transition: all ease;
+    border-radius: 3%;
+  }
+
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0.3;
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
+  .contain h1 p:hover{
+    transform: translateX(5px);
+    transition: ease 0.4s;
+    background-color: white;
+  }
+  .contain h1 p a:hover{
+    color: rgb(23,40,82);
+    background-color: whitesmoke;
+    transition: ease all 0.4s;
+    font-weight: bolder;
+    border-color: white;
+    opacity: 100%;
+    box-shadow: 1px 2px 10px rgb(255, 247, 247);
+  }
+  /* End of changes in contain */
+
+  section.show-animation h4{
+
+    transform: translateX(0) ; 
+    opacity: 1;
+  }
+
+
+  .section-heading{
+    font-size: 2.5rem;
+    color:black;
+    margin: 20px 0px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, rgb(23,40,82) 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 2s;
+    transform: translateX(100%);
+
+
+  }
+
+
+
+
+  section.show-animation .card{
+
+    transform: translateX(0) ; 
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .card  p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .icon-wrapper {
+    /* background-color: #2c7bfe; */
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: auto;
+    width: 3.5em;
+    /* color: #ffffff; */
+    border-radius: 25%;
+    /* display: grid; */
+    place-items: center;
+    transition: 0.5s;
+  }
+  .icon-wrapper img{
+    max-width: 100%;
+    height: 100px;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+ 
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    .section {
+      padding: 0 2em;
+      overflow-y: scroll;
+      box-sizing: border-box;
+    
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+    .contain{
+      flex-wrap: wrap;
+      height: auto;
+
+    }
+    
+
+  }
+  @media screen and (min-width: 992px) {
+    .section {
+      padding: 1em 3em;
+      overflow-y: scroll;
+      box-sizing: border-box;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  @media screen and (min-width: 300px) {
+    .section {
+      padding: 0 2em;
+      overflow-y: scroll;
+      box-sizing: border-box;
+    }
+    
+
+  }
+  @media screen and (max-width: 450px) {
+   
+    .service {
+      /* padding: 10px; */
+    }
+    .section{
+
+      /* padding: 10px; */
+    }
+    .service h4 {
+      font-size: 25px;
+      transform: none;
+      opacity: 1;
+      
+    }
+    .card{
+      transform: none;
+      padding: 20px 5px;
+    }
+    .service .section-heading{
+      font-size: 20px;
+    }
+
+    .service h2::before{
+     
+      width: 100px;
+      }
+      .section{
+        padding: 10px 5px;
+      }
+    
+      .contain{
+        display: inline-flex;
+        height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    
+
+  }
+
+
+  @media screen and (max-width: 760px) {
+    .service {
+      padding: 10px;
+    }
+    .section{
+
+      padding: 10px;
+    }
+    .service h4 {
+      font-size: 25px;
+      transform: none;
+      opacity: 1;
+      
+    }
+    .card{
+      transform: none;
+      padding: 20px 5px;
+    }
+    .service .section-heading{
+      font-size: 20px;
+    }
+
+    .service h2::before{
+     
+      width: 100px;
+      }
+      .section{
+        padding: 10px 5px;
+      }
+    
+      .contain{
+        display: inline-flex;
+        height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    *{
+      margin: 0px;
+    }
+      .contain h2{
+        left: 50%;
+        margin-left: -50.35px;
+        right: 0;
+        top: 0;
+        margin-top: 5px;
+      }
+      .contain h1{
+        padding-top: 30px;
+        font-size: 120%;
+        width:95%;
+        text-align: center;
+        margin-left: 0px;
+      }
+      .contain a{
+        font-size: 90%;
+        text-align: center;
+      }
+      .contain h1 p{
+        text-align: center;
+        width: 100%; 
+        display: inline-block;  
+        margin-top: 20px; 
+      }
+      .contain img{
+        height: 40vh;
+        width: 90%;
+        margin-top: 20px;
+      }
+    
+  }
+  @media screen and (max-width: 1430px){
+
+   
+    .contain{
+      display: inline-flex;
+      height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+  }
+  *{
+    margin: 0px;
+  }
+    .contain h2{
+      left: 50%;
+      margin-left: -62.975px;
+      right: 0;
+      top: 10px;
+      margin-top: 5px;
+    }
+    .contain h1{
+      padding-top: 30px;
+      width:80%;
+      text-align: center;
+      margin-left: 0px;
+    }
+    .contain a{
+      text-align: center;
+    }
+    .contain h1 p{
+      text-align: center;
+      width: 100%; 
+      display: inline-block;  
+      margin-top: 20px; 
+    }
+    .contain img{
+      height: 70vh;
+      width: 80%;
+      margin-top: 20px;
+    }
+
+
+  }

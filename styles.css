@@ -1,0 +1,783 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Top navbar */
+
+
+
+.nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5px;
+    /* background-image: linear-gradient(to left,rgb(2, 2, 68), rgb(18, 18, 30), rgb(32, 32, 41),rgb(32, 32, 41), rgb(12, 11, 11), rgb(6, 6, 6) ) ; */
+
+background-color: #ffffff;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+/* @keyframes nav-color-change {
+    
+    
+} */
+
+/* Company Titel */
+
+.nav-logo img{
+    width: auto;
+  
+     
+}
+
+/* .nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+    
+} */
+/* .nav h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    
+    
+    
+
+} */
+.nav-logo{
+    width: 15rem;
+  display: flex;
+  align-items: center;
+  height: auto;
+    
+    
+}
+
+/* .nav h1 span{
+    font-size: 0.8rem;
+    padding-left: 60px;
+    
+} */
+
+/* Menubar-section */
+
+.nav-menubar ul{
+    display: flex;
+    
+}
+.nav-menubar ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-menubar ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+    font-weight: 300;
+    
+    padding: 0 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    position: relative;
+}
+
+.submenu{
+    display: none;
+}
+
+/* Button section  */
+.login-button{
+   
+
+    
+        border: 1px solid orange;
+        background: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.5s;
+        background-position: 0 2.5%;
+        background: linear-gradient(#ffffff 50%, rgb(23,40,82) 50%);
+        background-size: 100% 200%;
+        background-position: 0 2.5%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        
+color: #000;
+
+
+}
+
+.login-button:hover{
+    background-color: rgb(23,40,82);;
+    color: #ffffff;
+    background-position: 0 100%;
+}
+
+.nav-menubar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color:orange;
+    transition: all ease 1s;
+
+}
+
+.nav-menubar ul li a:hover::after{
+ 
+    width: 100%;
+
+
+}
+
+
+
+/* hidden menu section */
+
+#hidden-menubar{
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+/* Top-navbar-responsive section */
+
+@media screen and (max-width: 768px){
+
+  body{
+    box-sizing: border-box;
+  }
+
+    #hidden-menubar{
+        font-size: 2rem;
+        color: #000;
+        display:block;
+        line-height: 1px;
+        position: absolute;
+        top: 25px;
+        left: 90%;
+    }
+   
+    .nav-logo img{
+        padding: 5px 0px 0px 5px;
+    }
+
+.nav{
+    height: fit-content;
+    width: 100%;
+    
+    display: block;
+    text-align: center;
+    
+    background-color: #ffffff;
+
+}
+
+/* Company Titel */
+
+/* .nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+    
+    
+}
+.nav h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    padding-top: 35px;
+    
+    
+
+} */
+
+/* .nav h1 span{
+    font-size: 0.8rem;
+
+    margin-left: 3%;
+} */
+
+/* Menubar-section */
+
+.nav .nav-menubar ul{
+    display: none;
+
+}
+
+
+.nav .submenu{
+    display: none;
+}
+
+/* button-section */
+ .nav-button{
+    
+    display: none;
+}
+
+
+.navx .nav{
+    height: fit-content;
+    width: 100%;
+    
+    display: block;
+    text-align: center;
+    
+    background-color: #ffffff;
+   
+    
+    /* background-image: linear-gradient(to left,rgb(2, 2, 68), rgb(18, 18, 30), rgb(32, 32, 41),rgb(32, 32, 41), rgb(12, 11, 11), rgb(6, 6, 6) ) ;
+     */
+
+}
+
+/* Company Titel */
+
+/* .navx .nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+    
+    
+}
+.navx h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    padding-top: 35px;
+    
+    
+
+} */
+
+/* .nav h1 span{
+    font-size: 0.8rem;
+
+    margin-left: 4%;
+} */
+
+/* Menubar-section */
+
+.navx .nav-menubar ul{
+    display: block;
+    
+}
+.navx .nav-menubar ul li{
+    list-style: none;
+    /* padding: 10px 30px; */
+}
+
+.navx .nav-menubar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+    
+    padding: 0 0 5px 0;
+}
+.navx .nav-menubar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #1D212B;
+    transition: all ease 1s;
+
+}
+.navx .nav-menubar ul li a:hover::after{width: 100%;}
+
+.nav .submenu{
+    display: none;
+}
+
+/* button-section */
+.navx .nav-button{
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+}
+.navx .nav-button button{
+    
+    border: 1px solid #1D212B;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    
+color: #000;
+    
+}
+
+.navx .signin-button{
+    margin-left: 1%;
+    padding: 8px 15px;
+}
+
+.navx .login-button{
+    padding: 8px 20px;
+
+}
+
+/* .navx .nav-menubar ul li:hover{
+   
+
+    background-color: rgb(130, 202, 202);
+    padding: 3px;
+    color: rgb(54, 31, 3);
+    border-top: 1px solid orangered ;
+    border-bottom: 1px solid orangered ;
+   
+}
+.navx .nav-menubar ul li a:hover{
+    color: rgb(54, 31, 3);
+    padding: 3px;
+} */
+
+.navx .nav-button button:hover{
+    
+    background-color:rgb(23,40,82); ;
+    color: #ffffff;
+}
+
+.nav-menubar ul li a:hover{
+    border: none;
+}
+
+
+
+}
+
+@media screen and (max-width: 1200px){
+    .nav-menubar ul li a:hover{
+        .navx .nav-menubar ul li a::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            background-color: #1D212B;
+            transition: all ease 1s;
+            
+        
+        }
+        .navx .nav-menubar ul li a:hover::after{width: 100%;}
+        
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --tcontainer-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.tcontainer {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 1rem;
+}
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 280px;
+  background-color: var(--tcontainer-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  section.show-animation{
+    padding: 0px ;
+  }
+  .tcontainer {
+    margin-inline: 1rem;
+    padding: 10px;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .tcontainer {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+
+.promo{
+    height: 50vh;
+    display: flex;
+    padding: 50px 30px;
+    align-items: center;
+    background-color: rgb(23,40,82);
+    color: whitesmoke;
+    justify-content: space-evenly;
+    transform: translateX(-100%);
+    transition: all ease 1.8s;
+
+}
+
+section.show-animation .promo{
+
+  transform: translateX(0);
+  
+
+}
+.promo h2{
+    line-height: 95%;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.promo .left{
+  transition: 0.5s;
+  animation: promoRight 1s linear ;
+}
+.promo .left, .right{
+    width: 50%;
+    padding: 5px 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+.promo .right{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   transition: 0.5s;
+    animation: promoTop 1s linear ;
+    
+}
+.promo .right button{
+  border: 0.5px white solid;
+  padding: 10px;
+  background-color: rgb(23,40,82);
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+.promo .right button:hover{
+  box-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 12px orange, 0 0 15px orange;
+  transform: translateX(10px);
+  animation: disco 10s 0s infinite;
+  transition: all ease 0.5s;
+}
+@keyframes disco {
+  25%{
+    box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 10px orange, 0 0 12px white;
+    transition: all ease 2s;
+  }
+  50%{
+    box-shadow: 2px 0 7px orange, 0 0 12px white, 0 0 15px yellow, 0 0 10px orange;
+    transition: all ease 2s;
+  }
+  75%{
+    box-shadow: 0 2px 3px orange, 0 0 15px yellow, 0 0 10px white, 0 0 12px orange;
+    transition: all ease 2s;
+  }
+  90%{
+    box-shadow: 0 0 7px orange, 0 0 15px white, 0 0 10px orange, 0 0 12px yellow;
+    transition: all ease 2s;
+  }
+}
+.promo .right a{
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
+.promo .left p{
+    color: #d6d6d6;
+}
+.promo .left{
+  margin-left: 100px;
+  flex-direction: column;
+}
+.promo .left p,h2,h5{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@keyframes promoTop {
+  0%{
+    transform: translate(0px,-100px);
+  }
+  100%{
+    transform: translate(0px,0px);
+  }
+  
+}
+
+
+@keyframes promoRight {
+  0%{
+    transform: translate(-200px,0px);
+  }
+  100%{
+    transform: translate(0px,0px);
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:760px){
+
+.promo {
+  height: auto;
+  flex-wrap: wrap;
+  transform: translateX(0);
+  padding: 20px 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.promo .left p,h2,h5{
+  text-align: center;
+  margin: 10px 0px;
+}
+.promo .left p{
+  text-align: center;
+}
+.promo .left,.right{
+
+  width: 100%;
+  animation: none;
+  transform: translateX(0);
+  padding: 0px;
+  margin: 10px 0px;
+  
+}
+
+.promo h2{
+  font-size: x-large;
+line-height: 30px;
+
+}
+
+
+section.animated-section.show-animation{
+
+
+  padding: 10px;
+  
+
+}
+section.show-animation .promo {
+text-align: center;
+}
+
+
+}
